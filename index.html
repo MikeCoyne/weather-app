@@ -5,21 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Weather App</header>
+    <header id="header">Weather App</header>
     <aside>
-        search input and list of cities
+        <input type="text" id="search" value="">
+        <button onclick="getCity()">Click to search weather by city</button>
+        
     </aside>
     <main>
         <section>
-            Today's weather
+            <div id="todaysWeather"></div>
         </section>
-        <section>
-            5 day forcast
+        <section class="forecast">
+            <div class="row">
+                <div class="col-md-3 forecast" id="dayOneWeather">Weather</div>
+                <div class="col-md-3 forecast" id="dayTwoWeather"></div>
+                <div class="col-md-3 forecast" id="dayThreeWeather"></div>
+                <div class="col-md-3 forecast" id="dayFourWeather"></div>
+            </div>5 day forcast
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
