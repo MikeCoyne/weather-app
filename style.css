@@ -7,6 +7,8 @@
   
 }
 
+
+
 .forecast {
     border: 2px solid black;
 }
@@ -16,16 +18,27 @@
     display: flex;
     justify-content: center;
     text-align:center;
-    font-size:x-large;
+    font-size: 60px;
+    font-family: Arial;
+    color: white;
+    background-color: darkgrey; 
+    border-radius: 5px;
+    padding: 30px;
 }
 
 
 #todaysWeather {
     border-style: solid;
     border-color: blue;
+    
 }
 
-
+aside {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    
+}
 
 
 

@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">">
+    <script src="https://kit.fontawesome.com/d7b8aa56f5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header">Weather App</header>
-    <aside>
-        <input type="text" id="search" value="">
-        <button onclick="getCity()">Click to search weather by city</button>
-        
+    <header id="header" class="container-fluid">Weather App</header>
+    <aside class="container-fluid">
+        <input class="input-group-text" type="text" id="search" value="" placeholder="Type your city here">
+        <button type="button" class="btn btn-info" onclick="getCity()">Search <i class="fas fa-search-location"></i></button>
+        <ul class="list-group recent-searches">
+            
+          </ul>
     </aside>
     <main>
         <section>

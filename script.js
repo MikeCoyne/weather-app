@@ -44,7 +44,7 @@ function getCity() {
 				console.log(lat, lon);
 				getWeather(lat, lon);
 			}
-		});
+		}); window.localStorage.setItem('getCity', JSON.stringify(cityName))
 }
 
 //let coordinatesRequestUrl = cityCoorUrl + chosenCity + "&limit=10&appid=572c065653aeaac21616fb00b72d0121";
